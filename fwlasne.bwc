@@ -1,0 +1,40 @@
+
+int porownaj(const void *operand1,const void *operand2) 
+{
+    const struct symbol_zrodla *pointer1=(const struct symbol_zrodla*) operand1;
+    const struct symbol_zrodla *pointer2=(const struct symbol_zrodla*) operand2;
+    if((pointer1->czestosc)==(pointer2->czestosc)) return 0;
+    else if((pointer1->czestosc)<(pointer2->czestosc))return 1;
+    else return -1;
+}
+
+int nazwa_pliku(char *nazwa_pliku, char *rozszerzenie, char *nazwa_pliku_nowa) 
+{
+    int i,n;
+   	char *w_nazwy;
+    
+    for (n=0; n<24; n++)
+       nazwa_pliku_nowa[n]=0;
+
+    n=0;
+    w_nazwy=nazwa_pliku;
+    nazwa_pliku_nowa[n]=*w_nazwy;
+    while ((nazwa_pliku_nowa[n]!=kropka)&(nazwa_pliku_nowa[n]!='\0'))
+           {
+           n++;
+           w_nazwy++;
+           nazwa_pliku_nowa[n]=*w_nazwy;
+           }
+    n++;
+    i=0;
+    nazwa_pliku_nowa[n]=rozszerzenie[i];
+    while (rozszerzenie[i]!='\0')
+           {
+           n++;
+           i++;
+           nazwa_pliku_nowa[n]=rozszerzenie[i];
+           }         
+    return 0;
+}    
+
+
