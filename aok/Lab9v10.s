@@ -1,3 +1,5 @@
+;  [((2*T[i+7]) + T[i+1]+T[i+2])*(T[i+3])+T[i+4]) ] /
+[T[i+5] ]
 .data
 
 licznikT:	.word	130
