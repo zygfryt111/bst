@@ -1,0 +1,20 @@
+<html><head>
+<title>p43</title>
+<script language="JavaScript"> 
+function oblicz(form)
+{
+form.X2.value=form.X.value*2;
+form.XX.value=form.X.value*form.X.value;
+}
+</script>
+</head><body>
+<b> Przykład ze skryptem Javy </b>
+<hr>
+<form method="post"><br>
+X&nbsp; :<input name="X" value="0" onchange="oblicz(this.form);" type="text">
+ <br><br>
+2X:<input name="X2" value="0" onchange="this.form.X.value=this.value/2; oblicz(this.form);" type="text"> 
+<br><br>
+X2:<input name="XX" value="0" onchange="this.form.X.value=Math.sqrt(this.value);oblicz(this.form); "type="text"> 
+<br><hr>
+</form></body></html>

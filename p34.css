@@ -1,0 +1,118 @@
+body { 
+	background: #e6f8eb; 
+	color: #575757; 
+	text-align: center; 
+	font: 62.5% Arial,  sans-serif; 
+	}
+div { 
+	width: 778px; 
+	margin: 0 auto; 
+	background-color: #e0e0e0; 
+	text-align: left; 
+	border:0; }
+
+/*div.strona {
+	margin-left: 3px;
+	padding: 1px; width:570px;
+	float:left;
+	overflow:hidden;
+	border-width: 0; vertical-align: top; font-family: Verdana, Arial, Helvetica, sans-serif; 
+	}*/
+
+div.lewa { 
+	float: left; 
+	width: 180px; 
+	display: inline; 
+	margin-left: 2px;
+	}
+div.logo { 
+	height: 180px; 
+	width: 200px; 
+	background: #00681e;
+	float: left;
+	}
+div.logo img { 
+	border: none; 
+	margin: 0;
+	}
+/*div.menu { 
+	width: 180px;
+	float: left;
+	}*/
+div.gora { 
+	background: url(topphoto.jpg) no-repeat; 
+	float: left; 
+	height: 180px; 
+	width: 575px; 
+	display: inline;
+	}
+div.strona {
+	width: 550px; 
+	margin-left: 3px; 
+	background-color: #e0e0e0; 
+	text-align: left;
+	padding: 1px;
+	float:left;
+	overflow:hidden; 
+	border:0;  
+	border-width: 0; 
+	vertical-align: top; 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font: 150% Arial,  sans-serif;
+	
+	}
+div.tresc {
+	margin-left: 180px;
+	}
+div.stopka { 
+	height: 50px; 
+	padding: 8px 5px; 
+	color: #fff; 
+	background:#6fa16e ; 
+	font-size: 1.3em; 
+	text-align: right;
+	clear: left;
+	font: sans-serif;
+	}
+li#glowna { background-color: #00681e;}
+li#fonts { background-color: #4c8d4b; }
+li#texts { background-color: #6fa16e; }
+li#margin { background-color: #92b492; }
+li#kolor { background-color: #adc6ac; }
+div.menu a { 
+	width: 160px; 
+	display: block; 
+	padding: 6px 0 5px 20px; 
+	font: bold small-caps 1.6em Arial,  sans-serif;	
+	color: white;
+	}
+div.menu a:hover { 
+	background: url(hover.gif) no-repeat 100% 50%;
+	}
+div.menu {
+	width: 200px;
+	float:left;
+	text-align:left;
+	padding:1px;
+	}
+div.menu ul { 
+	line-height: 30px; 
+	list-style-type:none;
+	}
+div.menu li { 
+	margin-top: 1px; 
+	float: none; 
+	display:list-item;
+	}
+p:first-line{
+	background-color: yellow;
+	}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.margin {
+	margin-left: 0px;
+}

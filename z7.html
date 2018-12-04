@@ -1,0 +1,24 @@
+<DOCTYPE html>
+<html><head>
+<meta content="text/html" charset="utf-8" http-equiv="content-type">
+<style type="text/css">
+div { background-color:#00ffff; width:150px; height:150px; overflow:auto;}
+
+</style>
+<script type="text/JavaScript">
+
+function foo(color) {
+    document.getElementById("box").style.backgroundColor="#FFFF00";
+    return false;
+}
+</script>
+<title>z7</title>
+</head>
+<body>
+<p>Własność overflow powoduje, że zawartoś jest przewijana jeżli wielkość elementu przekracza wymiary sekcji .</p>
+<div id="box">
+Własność overflow pozwala lepiej kontrolować wygląd strony. Własność overflow może przyjmowa� warto�ci : visible, hidden, auto, lub inherit. Zmiana warto�ci pozwala sprawdzi� ich dzia�anie. Domy�l� warto�ci� jest visible.
+</div>
+<button type="button" onclick="foo()">Zmiana koloru tła</button>
+</body>
+</html>

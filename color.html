@@ -1,0 +1,108 @@
+<html>
+<head><title>Lab. 4</title>
+<link href="p34.css" rel="stylesheet" type="text/css">
+<meta content="text/html" charset="utf-8" http-equiv="content-type">
+</head>
+
+<body>
+
+<div class="kont">
+	<div class="logo"><img src=logo.gif></div>
+	<div class="gora"></div>
+	<div class="menu"><nav>
+			<ul>
+				<li id=glowna><a href="p34.html" accesskey="0">Strona CSS2</a></li>
+				<li id=fonts><a href="fonts.html">Fonts</a></li>
+				<li id=texts><a href="text.html">Texts</a></li>
+				<li id=margin><a href="marginesy.html">Marginesy</a></li>
+				<li id=kolor><a href="color.html">Kolory</a></li>
+			</ul>
+		</nav>
+		</div>
+	<div class="strona"><p>'color'</p><br>
+    Value:	<color> | inherit<br>
+    Domyslnie:	  zaleznie od indywidualnych własności<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+    Np:<br>
+<br>
+EM { color: red }	       /* predefined color name */<br>
+EM { color: rgb(255,0,0) }     /* RGB range 0-255   */<br>
+<br>
+<br>
+<p>'background-color'</p><br>
+    Wartość:	  <color> | transparent | inherit<br>
+    Domyslnie:	  transparent<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+    Np:<br>
+H1 { background-color: #F00 }<br>
+<br>
+<p>'background-image'</p><br>
+    Wartość:	  <uri> | none | inherit<br>
+    Domyslnie:	  none<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+    Np:<br>
+BODY { background-image: url("marble.gif") }<br>
+P { background-image: none }<br>
+<br>
+<br>
+<p>'background-repeat'</p><br>
+    Wartość:	  repeat | repeat-x | repeat-y | no-repeat | inherit<br>
+    Domyslnie:	  repeat<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+<br>
+repeat<br>
+    powtarzanie image poziomo i pionowo .<br>
+repeat-x<br>
+    powtarzanie image tylko poziomo .<br>
+repeat-y<br>
+    powtarzanie image tylko pionowo.<br>
+no-repeat<br>
+    bez powtarzania<br>
+<br>
+    Np:<br>
+<br>
+BODY {<br>
+  background: white url("pendant.gif");<br>
+  background-repeat: repeat-y;<br>
+  background-position: center;<br>
+}<br>
+<br>
+<br>
+<p>'background-attachment'</p><br>
+    Wartość:	  scroll | fixed | inherit<br>
+    Domyslnie:	  scroll<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+    Np:<br>
+<br>
+<br>
+BODY {<br>
+  background: red url("pendant.gif");<br>
+  background-repeat: repeat-y;<br>
+  background-attachment: fixed;<br>
+<br>
+<p>'background-position'</p><br>
+    Wartość:	  [ [<percentage> | <length> ]{1,2} | [ [top | center | bottom] || [left | center | right] ] ] | inherit<br>
+    Domyslnie:	  0% 0%<br>
+    Np:<br>
+<br>
+BODY {<br>
+  background-image: url("logo.png");<br>
+  background-attachment: fixed;<br>
+  background-position: 100% 100%;<br>
+  background-repeat: no-repeat;<br>
+}<br>
+<br>
+<br>
+<p>'background'</p><br>
+    Wartość:	  [<'background-color'> || <'background-image'> || <'background-repeat'> || <'background-attachment'> || <'background-position'>] | inherit<br>
+    Domyslnie:	  nie definowane<br>
+    Dotyczy:	  Wszystkich elemntów<br>
+<br>
+P { background: url("chess.png") gray 50% repeat fixed }<br>
+<br>
+<br>
+</div>
+	<div class="stopka">Piotr Gajda</div>
+</div>
+</body>
+</html>

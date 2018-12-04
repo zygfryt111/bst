@@ -1,0 +1,83 @@
+<DOCTYPE html>
+<html><head>
+<meta content="text/html" charset="utf-8" http-equiv="content-type">
+<style type="text/css">
+div.kontener {
+	width: 100%;
+	margin: 0;
+	padding: 1em;
+	}
+div.naglowek {
+	padding: 0.5em;
+	color: white;
+	background-color: blue;
+	clear: left;
+	}
+div.stopka {
+	padding: 0.5em;
+	color: white;
+	background-color: black;
+	clear: left;
+	text-align: right;
+	}
+h1.naglowek {
+	padding: 0;
+	margin: 0;
+	}
+div.lewy {
+	float:left;
+	width: 160px;
+	margin: 0;
+	padding: 1em;
+	}
+div.tresc {
+	margin-left: 190px;
+	border-left: 1px solid gray;
+	padding: 1em;
+	}
+button.guzik {
+    width: 160px;
+    padding: 1em;
+    float: left;
+	}
+
+</style>
+<title>z8</title>
+</head>
+<script type="text/JavaScript">
+
+    function foo1() {
+        x=document.getElementsByClassName("stopka")[0];
+        x.innerHTML = "Ćwiczenia z JavaScript - Piotr Gajda";
+    }
+
+    function foo2() {
+        x=document.getElementsByClassName("naglowek")[0];
+        x.style.color = 'green';
+        x.style.background = 'red';
+    }
+    
+    function foo3() {
+        x=document.getElementsByClassName("tresc")[0];
+        x.style.color = 'orange';
+        x.style.background = 'lightblue';
+    }
+    </script>
+<body>
+<div class="kontener">
+<div class="naglowek"><h1 class="header">Technologie Internetowe </h1></div>
+<div class="lewy"><p>Fragment ekranu dla menu . Nie jest powiekszany i zajmuje szeroko�� 160 pixeli. Dope�nienie wielko�ci jednego znaku </p>
+    <button type="button" class='guzik' onclick="foo1()">Zmiana treści stopki</button>
+    <button type="button" class='guzik' onclick="foo2()">Zmiana kolorów nagłówka</button>
+    <button type="button" class='guzik' onclick="foo3()">Zmiana kolorów treści</button>
+
+
+
+</div>
+<div class="tresc"><h2>Zawarto�� </h2>
+<p>Strona domowa projektu z Technologii Internetowych. Obramowanie 1 pixel, zajmuje szeroko�� 160 pixeli, dope�nienie wielko�ci jednego znaku. Sprawd� wygl�d strony w przegl�darce przy zamianie wymiar�w okna przegladarki
+<br><br></p></div>
+<div class="stopka">Autor Piotr Gajda 2018</div>
+</div>
+</body>
+</html>

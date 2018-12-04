@@ -1,0 +1,28 @@
+<HTML><head>
+
+<script language="javascript">
+
+function obliczX(form)
+{
+form.Xsquared.value=Math.pow(form.X.value,2);
+form.Xcubed.value=Math.pow(form.X.value,3);
+}
+</script>
+</head><body>
+
+<i> Zad V</i>  <br>
+<b> Przykład ze skryptem Javy </b>
+<hr>
+<form method="post"><br>
+X&nbsp; :<input name="X" value="0" onchange="obliczX(this.form);" type="text">
+ <br><br>
+Xsquared:<input name="Xsquared" value="0" onchange="this.form.X.value=Math.sqrt(this.value); obliczX(this.form);" type="text"> 
+<br><br>
+Xcubed:<input name="Xcubed" value="0" onchange="this.form.X.value=Math.pow(this.value,-3); obliczX(this.form); "type="text"> 
+
+<hr>
+
+
+</form></body></html>
+
+<BODY> </HTML >

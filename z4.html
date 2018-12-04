@@ -1,0 +1,37 @@
+<HTML> <BODY >
+<i> Zad VI</i>  <br>
+<form>
+     <input type=text name=xx value="Gajda Piotr">
+</form>
+Przykład ustalania dnia tygodnia:<hr>
+<script type="text/javascript">
+var d = new Date();
+dzien=d.getDay();
+switch (dzien)
+{case 5:
+    document.write("<b> Piątek!!! </b>");
+    break;
+case 6:
+  document.write("<b> Sobota Weekend</b>");
+  break;
+case 1:
+  document.write("<b> Nie lubię poniedziałku</b>");
+  break;
+case 0:
+	document.write("Niedziela");
+	break;
+case 2:
+	document.write("Wtorek");
+	break;
+case 3:
+	document.write("Środa");
+	break;
+case 4:
+	document.write("Czwartek");
+	break;
+default:
+  document.write("<b>I'm really looking forward to this weekend!</b>"); }
+</script>
+<p><hr>Metoda getday() zwraca numer dnia w tygodniu tj. dla niedzieli=0, poniedziałku =1,  itd..</p>
+
+<BODY> </HTML >

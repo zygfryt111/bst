@@ -1,0 +1,176 @@
+<html>
+<head><title>Lab. 4</title>
+<link href="p34.css" rel="stylesheet" type="text/css">
+<meta content="text/html" charset="utf-8" http-equiv="content-type">
+</head>
+
+<body>
+
+<div class="kont">
+	<div class="logo"><img src=logo.gif></div>
+	<div class="gora"></div>
+	<div class="menu"><nav>
+			<ul>
+				<li id=glowna><a href="p34.html" accesskey="0">Strona CSS2</a></li>
+				<li id=fonts><a href="fonts.html">Fonts</a></li>
+				<li id=texts><a href="text.html">Texts</a></li>
+				<li id=margin><a href="marginesy.html">Marginesy</a></li>
+				<li id=kolor><a href="color.html">Kolory</a></li>
+			</ul>
+		</nav>
+		</div>
+	<div class="strona"><p>Pudełka(Box) - wymiary</p><br>
+<br>
+Każdy  box ma swoja zawartośc (content) tj (e.g., text, image, etc.) i opcjonalne obszary dla<br>
+dopełnienia( padding), obramowaniem (border), marginesami(margin)  wymiary każdego z obszarów są specyfikowane<br>
+we własnościach definiowanych ja niżej. Ponizszy diagram pokazuje zależnosci i terminologię używaną<br>
+dla własnosci :  margin, border, and padding:<br>
+<br>
+<img src="marginesy.gif" alt="margines" class="center"><br>
+<br>
+<br>
+<br>
+<br>
+Rysunek przedstawia relacje pomiedzy zawartością (content), dopełnienm (padding),<br>
+obramoaniem(borders), i marginesami( margins).<br>
+<br>
+<br>
+<p>'margin-top', 'margin-right', 'margin-bottom', 'margin-left'</p><br>
+<div class="margin">Wartość:	< margin-width > | inherit<br>
+    Domyślnie:		0<br>
+    Dotyczy:   wszyskich elementów<br>
+    Np.:<br>
+    H1 { margin-top: 2em }</div><br>
+<br>
+<br>
+<p>margin'</p><br>
+<div class="margin">    Wartość:	<margin-width>{1,4} | inherit<br>
+    Domyślnie:	zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów<br>
+    Uwaga: Własnośc 'margin' jest skrócona wersją dla własności<br>
+	   'margin-top', 'margin-right', 'margin-bottom', i 'margin-left'.<br>
+<br>
+    Np:<br>
+<br>
+BODY { margin: 2em }	     /* all margins set to 2em */<br>
+BODY { margin: 1em 2em }     /* top & bottom = 1em, right & left = 2em */<br>
+BODY { margin: 1em 2em 3em } /* top=1em, right=2em, bottom=3em, left=2em */<br>
+<br>
+Ostania reguła jest równoważna poniższym 4-rem regułom<br>
+BODY {<br>
+  margin-top: 1em;<br>
+  margin-right: 2em;<br>
+  margin-bottom: 3em;<br>
+  margin-left: 2em;<br>
+}</div><br>
+<br>
+<br>
+<p>'padding-top', 'padding-right', 'padding-bottom', 'padding-left'</p><br>
+<div class="margin">    Wartość:	<padding-width> | inherit<br>
+    Domyślnie:		0<br>
+    Dotyczy:   wszyskich elementów<br>
+    np:<br>
+    BLOCKQUOTE { padding-top: 0.3em }</div><br>
+<br>
+<br>
+<br>
+<br>
+<p>'padding'</p><br>
+<div class="margin">    Wartość:	<padding-width>{1,4} | inherit<br>
+    Domyślnie:		nie są okreslone<br>
+    Dotyczy:   wszyskich elementów<br>
+    Uwaga: Własnośc 'padding' jest skrócona wersją ustawiana własności<br>
+	   'padding-top', 'padding-right', 'padding-bottom', and 'padding-left'<br>
+<br>
+    Np:<br>
+H1 {<br>
+  background: white;<br>
+  padding: 1em 2em;<br>
+}</div><br>
+<br>
+<br>
+<br>
+<p>'border-top-width', 'border-right-width', 'border-bottom-width', 'border-left-width'</p><br>
+<div class="margin">    Wartość:	<border-width> | inherit<br>
+    Domyślnie:		medium<br>
+    Dotyczy:   wszyskich elementów</div><br>
+<br>
+<br>
+<p>'border-width'</p><br>
+<div class="margin">    Wartość:	<border-width>{1,4} | inherit<br>
+    Domyślnie:	 zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów<br>
+    Uwaga:Własnośc 'border-width' jest skrócona wersją ustawiana własności<br>
+		   'border-top-width', 'border-right-width', 'border-bottom-width', and 'border-left-width'<br>
+<br>
+    Np:<br>
+H1 { border-width: thin }		    /* thin thin thin thin */<br>
+H1 { border-width: thin thick } 	    /* thin thick thin thick */<br>
+H1 { border-width: thin thick medium }	    /* thin thick medium thick */</div><br>
+<br>
+<br>
+<p>'border-top-color', 'border-right-color', 'border-bottom-color', 'border-left-color'</p><br>
+ <div class="margin">   Wartość:	<color> | inherit<br>
+    Domyślnie:	Wartość własnosci 'color'<br>
+    Dotyczy:   wszyskich elementów</div><br>
+<br>
+<br>
+<p>'border-color'</p><br>
+<div class="margin">    Wartość:	<color>{1,4} | transparent | inherit<br>
+    Domyślnie:	zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów</div><br>
+<br>
+<br>
+<br>
+<p>'border-top-style', 'border-right-style', 'border-bottom-style', 'border-left-style'</p><br>
+<div class="margin">    Wartość:	<border-style> | inherit<br>
+    Domyślnie:		none<br>
+    Dotyczy:   wszyskich elementów</div><br>
+<br>
+<br>
+<p>'border-style'</p><br>
+<div class="margin">    Wartość:	<border-style>{1,4} | inherit<br>
+    Domyślnie:	zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów<br>
+<br>
+     #xy34 { border-style: solid dotted }<br>
+<br>
+W przykładzie powyżej pozioma linie obramowania sa ciągłe a pionowe są kropkowane.</div><br>
+<br>
+<br>
+<p>'border-top', 'border-right', 'border-bottom', 'border-left'</p><br>
+<div class="margin">    Wartość:	[ <'border-top-width'> || <'border-style'> || <color> ] | inherit<br>
+    Domyślnie:	zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów<br>
+<br>
+H1 { border-bottom: thick solid red }<br>
+<br>
+The above rule will set the width, style, and color of the border below the H1 element. Omitted Wartośćs are set to their Domyślnie Wartośćs. Since the following rule does not specify a border color, the border will have the color specified by the 'color' property:<br>
+<br>
+H1 { border-bottom: thick solid }</div><br>
+<br>
+<br>
+<p>'border'</p><br>
+<div class="margin">    Wartość:	[ <'border-width'> || <'border-style'> || <color> ] | inherit<br>
+    Domyślnie:	zaleznie od indywidualnych własności<br>
+    Dotyczy:   wszyskich elementów<br>
+    Uwaga: własnośc 'border' jest skrócona wersją dla własności<br>
+	   width, color, i style dla obramowania boxów.<br>
+<br>
+<br>
+Na przykład ponizsze dwie regułu sa równowazne<br>
+<br>
+P { border: solid red }<br>
+P {<br>
+  border-top: solid red;<br>
+  border-right: solid red;<br>
+  border-bottom: solid red;<br>
+  border-left: solid red</div><br>
+}<br>
+<br>
+<br>
+<br></div>
+	<div class="stopka">Piotr Gajda</div>
+</div>
+</body>
+</html>
